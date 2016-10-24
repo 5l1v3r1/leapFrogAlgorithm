@@ -1,5 +1,5 @@
 # closestSequence2
-My algorithm and answer to closest sequence problem. As I find the time, I will be writing this in many programming languages. This problem led me to found the "Leap Frog" algorithm, which leaps back and forth over the value until a match is found.
+My algorithm and answer to closest sequence problem as challenged here: https://codefights.com/challenge/Qjts7cukDvYpDW4Bc. As I find the time, I will be writing this in many programming languages. This problem led me to found the "Leap Frog" algorithm, which leaps back and forth over the value until a match is found.
 
 ##The Problem - Explained:
 
