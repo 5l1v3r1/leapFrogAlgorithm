@@ -12,9 +12,9 @@ sub main{
  }
  print $diff."\n"; # done.
 }
-# leap frog search algorithm:
+# my very own "leap frog" search algorithm:
 sub findClosest ($$\@){ # bleh, so many sigils...
  return ($_[0]+$_[1]) if(($_[0]+$_[1])~~@{$_[2]}); # hop left
  return $_[0]-$_[1] if(($_[0]-$_[1])~~@{$_[2]}); # hop right
- findClosest($_[0],$_[1]+1,@{$_[2]}); # ribbit-recursion
+ findClosest($_[0],$_[1]+1,@{$_[2]}); # ribbit, recursion, ribbit
 }
