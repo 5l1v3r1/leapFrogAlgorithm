@@ -49,4 +49,6 @@ This is the "*Leap Frog*" algorithm that I was able to come up with. I call it t
 
 The code, `return ($_[0]+$_[1]) if(($_[0]+$_[1])~~@{$_[2]}); # leap right` hops right, or adds `1` to the number (or shifts the number-line if you think of it in simple mathematics). While the code, `return $_[0]-$_[1] if(($_[0]-$_[1])~~@{$_[2]}); # leap left` leaps left to decrement the value. I guess that when I picture numbers in sequence, I cannot help to think of them on a strangely distorted number-line with the value in quest in the dead center. So, again, the action of "*leaping*" just made sense to me. This is obviously faster than going through EVERY single element in `@b`, finding the difference, then calculating which difference is lowest.
 
+Please note that this function/program will break, or result in undefined behavior, at VERY large numbers. Billions for 32 bit machines, (-2,147,483,648 (-231) through 2,147,483,647 (231 - 1) for signed numbers {Wikipedia.org}) and quintillions for 64 bit processors (Signed: From −9,223,372,036,854,775,808 to 9,223,372,036,854,775,807, from −(263) to 263 − 1 {Wikipedia.org}). This is because the leaps will go out of bounds or loop around.
+
 ~Douglas
