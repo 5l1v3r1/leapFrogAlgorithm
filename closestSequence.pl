@@ -15,6 +15,6 @@ sub main{
 # my very own "leap frog" search algorithm:
 sub findClosest ($$\@){ # bleh, so many sigils...
  return ($_[0]+$_[1]) if(($_[0]+$_[1])~~@{$_[2]}); # leap right
- return $_[0]-$_[1] if(($_[0]-$_[1])~~@{$_[2]}); # leap left
+ return ($_[0]-$_[1]) if(($_[0]-$_[1])~~@{$_[2]}); # leap left
  findClosest($_[0],$_[1]+1,@{$_[2]}); # ribbit, recursion, ribbit
 }
