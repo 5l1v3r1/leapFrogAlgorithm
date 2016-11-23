@@ -37,7 +37,7 @@ a.length ≤ b.length ≤ 1000,
 
 ##The Code/Answer - Explained
 
-The program is broken up into to functions, `main()` and `findClosest()`.
+The program is broken up into two functions, `main()` and `findClosest()`.
 
 ###main()
 The purpose of `main()` is to encapsulate our variables and provide a place for entry in our application for the loader. We start off `main()` with two arrays, `@a` and `@b`. These will be the arrays of sequences that we will test to find the new sequence and ultimately the returned difference. The `$diff` integer is simply a placeholder for the difference of the two sequences. For instance, the problem explains that the returned result must be:
